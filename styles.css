@@ -1,0 +1,116 @@
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin: 0 ;
+    padding: 20px;
+    background-image: url('nu3.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Mantém a imagem fixa ao rolar a página */
+}
+
+/* Estilo padrão para desktops */
+.container {
+    max-width: 500px;
+    margin: auto;
+    margin-top: 10%;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    margin-left: 5%;
+    margin-right: auto;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: red;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Responsividade para tablets e telas menores */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+        background-size: cover; /* Mantém a cobertura da imagem */
+        background-attachment: scroll; /* Faz a imagem rolar com a página */
+    }
+
+    .container {
+        max-width: 90%; /* Ajusta o container para 90% da largura da tela */
+        margin-top: 10%; /* Ajusta o espaçamento superior para dispositivos menores */
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 22px; /* Reduzido para telas menores */
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    .button {
+        width: 100%;
+        padding: 10px;
+        font-size: 14px;
+    }
+}
+
+/* Responsividade para celulares pequenos */
+@media (max-width: 480px) {
+    body {
+        margin-bottom: 440px;
+        padding: 5px;
+        
+    }
+
+    .container {
+        max-width: 65%; /* Ajusta o container para 95% da largura da tela */
+        margin-top: 100px; /* Ajusta o espaçamento superior para celulares pequenos */
+        padding: 25px;
+        position: center;
+      
+    }
+
+    h1 {
+        font-size: 18px; /* Reduzido para garantir que o título se ajuste bem */
+    }
+
+    p {
+        font-size: 12px;
+    }
+
+    .button {
+        padding: 10px 0px;
+        margin-right: 20%;
+        font-size: 12px;
+        position: relative;
+    }
+}
